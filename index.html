@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisu ui css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- tailwind css -->
+<link href="./output.css" rel="stylesheet">
+
+<style>
+    .head-text{
+        color: white;
+    }
+
+    .head-text-2{
+        color: white;
+    }
+</style>
+</head>
+<body class="bg-slate-800">
+    <h1>hello hello</h1>
+    <h3 class="head-text">account no must have 11 digit</h3>
+    <h3 class="head-text-2">if pin no will be 1234 then go to new window otherwise no entry in another window</h3>
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+        <header>
+            <nav class="flex justify-center item-center mt-6">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10" >
+                    <img class="w-40 absolute" src="assets/bg.png" alt="">
+                    <img class="w-16" src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+       <!-- log in form -->
+
+       <div class="">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+        
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Account Number</label>
+                <input value="23456789876" id="account-no" type="number" class="input" placeholder="type your number" required />
+                <label class="label">PIN</label>
+                <input value="1234" id="pin-no" type="password" class="input" placeholder="type your pin" required />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="script/login.js"></script>
+
+</body>
+</html>
