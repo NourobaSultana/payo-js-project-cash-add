@@ -15,6 +15,7 @@ document.getElementById('cashout-btn').addEventListener('click',
             if(convertedPin===1234){
                 const sub =convertedmainbalance - convertedCashOutAmount;
                 document.getElementById('main-balance').innerText=sub;
+        
             }
         }
 
